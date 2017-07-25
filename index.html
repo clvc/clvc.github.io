@@ -1,106 +1,154 @@
-<!DOCTYPE html>
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!-->
-<html lang="en">
-<!--<![endif]-->
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
 	<head>
-		<meta charset="utf-8">
 		<title>Colin Cooke</title>
-		<meta name="description" content="Colin Cooke - Mechatronics Engineering Student">
-		<meta name="author" content="colincooke.ca">
-
-		<!-- Mobile Meta -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="images/favicon.ico">
-
-		<!-- Web Fonts -->
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
-
-		<!-- Bootstrap core CSS -->
-		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-
-		<!-- Font Awesome CSS -->
-		<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
-
-		<!-- Plugins -->
-		<link href="css/animations.css" rel="stylesheet">
-
-		<!-- Worthy core CSS file -->
-		<link href="css/style.css" rel="stylesheet">
-
-		<!-- Custom css -->
-		<link href="css/custom.css" rel="stylesheet">
 	</head>
+	<body>
 
-	<body class="no-trans">
-		<!-- scrollToTop -->
-		<!-- ================ -->
-		<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-		<!-- header start -->
-		<!-- ================ -->
-
-		<!-- header end -->
-
-		<!-- banner start -->
-		<!-- ================ -->
-		<div id="banner" class="banner">
-			<div class="banner-image"></div>
-			<div class="banner-caption">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 object-non-visible" data-animation-effect="fadeIn">
-							<h1 class="text-center">Colin <span>Cooke</span></h1>
-							<p class="lead text-center">Half tech enthusiast <span>Half life enthusiast</span></p>
-							<div align="center" style="margin-right:15px;">
-					<a href="http://github.com/clvcooke" target="_blank"><img class="icon" src="images/git2.png"></a>
-					<a href="mailto:clvcooke@gmail.com"><img class="icon" src="images/mail.png"></a>
-					<a href="http://linkedin.com/in/clvcooke" target="_blank"><img class="icon" src="images/li.png"></a>
-					<a href="https://open.spotify.com/user/clvcooke" target="_blank"><img class="icon" src="images/spotify.png"></a>
-</div>
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<!--<img src="images/favicon.ico"-->
+							<span class="icon fa-circle-o-notch"></span>
 						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Colin Cooke</h1>
+								<p>Mechatronics Engineering student and Deep Learning enthusiast</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#research">Research</a></li>
+								<li><a href="#work">Work</a></li>
+								<li><a href="#about">About</a></li>
+								<li><a href="#awards">Awards</a></li>
+								<li><a href="mailto:clvcooke@gmail.com">Contact</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Research -->
+							<article id="research">
+								<h2 class="major">Research</h2>
+								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+								<h3 class="major">Large Scale Neural-Simulations</h3>	
+								<p>Working with the Center for Theoretical Neuroscience at the University of Waterloo I experimented with possible optimization methods for biologically plausible nerual simulations.
+									I built networks which learned how to acheive tasks ranging from simple multiplication to compression of images. In addition I led an investigation
+									into optimizing very large models that could acheive complex tasks (like associative memory) by optimizing the sub-networks within them. 
+								</p>
+								<h3 class="major">Segmentation of Aerial Imagery</h3>	
+								<p>While working for Heliolytics Inc. I pioneered the development of deep learning convolutional neural networks to segment aerial imagery.
+									The models developed automate the analysis of solar panels allowing analysts to work faster and focus on edge cases rather than easily analyzed panels.  
+								</p>
+							</article>
+						<!-- Work -->
+							<article id="work">
+								<h2 class="major">Work</h2>
+								<span class="image main"><img src="images/work.jpg" alt="" /></span>
+								<p>My full resume can be found <a href="https://goo.gl/vbipNF">here.</a> or <a href="https://www.linkedin.com/in/clvcooke/">linkedin</a> if you prefer.</p>
+								<h3>Hardware Systems Engineer (co-op) - Heliolytics</h3>
+								<ul>
+									<li>Independently developed deep learning systems to segment aerial imagery and automate analysis of solar panels</li>
+									<li>Reverse engineered proprietary data formats to access raw data from historical archives</li>
+									<li> Implemented custom camera drivers for a high resolution infrared capture system, removing the need for proprietary software and associated costs</li>
+								</ul>
+								<h3>Integration Engineer (co-op) - Nest Labs</h3>
+								<ul>
+									<li>Load tested the real time system’s backend powering millions of devices by simulating the behavior of several distinct usage patterns and protocols with a combination of Scala, Gatling and Akka</li>
+									<li>Developed tooling to analyze service logs in order to extract and visualize request information in an accessible and efficient way with Scala, The Play Framework, and Docker</li>
+									<li>Centralized and simplified load test tooling to reduce setup and deploy time by containerizing the tools using Docker</li>
+									<li>Lead a major overhaul of load testing tools to improve consistency and reflect production traffic</li>
+									<li>Worked with team members to produce custom traffic distributions in order to stress test features and push the system past its limits</li>
+								</ul>
+								<h3>Mobile/Full-Stack Engineer (co-op) - Taplytics</h3>
+								<ul>
+									<li>Implemented a SQLite database to reduce memory overhead by 80% when devices are offline</li>
+									<li>Optimized SDK, resulting in speed increases of up to 150% for select features</li>
+									<li>Implemented location and event-based push notifications using the Google Play Services location API (Android) and Core Location API (iOS)</li>
+									<li>Developed feature to allow visual changes to arbitrary elements contained within ListViews or RecyclerViews after an app has been released</li>
+									<li>Provided support and solved technical issues in real time for clients such as Tinder and Target</li>
+								</ul>
+							</article>
+
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">About</h2>
+								<span class="image main"><img src="images/about.jpg" alt="" /></span>
+								<p>A Mechatronics Enginering Student by education but an AI developer by trade.
+									I was drawn to robotics by its ability to augment or replace the physical abilities of humans.
+									The concept of making people better at what they do or even replacing them entirely has always driven me to learn the inner workings of machines and processes.
+								</p>
+								<p>
+									What robotics does for a person's body, AI does for their mind. The ability to identify trends, make predictions, and learn is what seperates artifial intellegence from every piece of technology that has come before.
+									The minute I peared into this wonderful field I was drawn in and have been down the rabit hole ever since. I want to understand how the amazing systems we are able to build work, and to integrate knowledge from other fields to develop new methods and applications.
+									Deep learning has the potential to transform almost every aspect of human life, and I intend to be part of that transformation.
+								</p>
+							</article>
+
+						<!-- Elements -->
+							<article id="awards">
+								<h2 class="major">Awards</h2>
+								<span class="image main"><img src="images/awards.jpg" alt="" /></span>
+								<ul>
+									<li>Technical Speaking Competition 1st Place - Waterloo Enginering Competition</li>
+									<li>President's Research Award - University of Waterloo</li>
+									<li>Top 10 - Linkedin Hackathon 2016</li>
+									<li>Junior Design Competition 1st Place - Canadian Engineering Competition</li>
+									<li>Junior Design Competition 1st Place - Ontario Engineering Competition</li>
+									<li>Junior Design Competition 1st Place - Waterloo Enginering Competition</li>
+									<li>President's International Experience Award - University of Waterloo</li>
+									<li>Queens Startup Summit 1st Place - Queens University
+									<li>President's Scholarship of Distinction - University of Waterloo</li>
+								</ul>
+							</article>
+
 					</div>
 
-				</div>
+				<!-- Footer -->
+					<footer id="footer">
+						<!--<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>-->
+					</footer>
+
 			</div>
-		</div>
-		<!-- banner end -->
 
+		<!-- BG -->
+			<div id="bg"></div>
 
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-
-
-		<!-- section
-
-
-		<!-- footer end -->
-
-		<!-- JavaScript files placed at the end of the document so the pages load faster
-		================================================== -->
-		<!-- Jquery and Bootstap core js files -->
-		<script type="text/javascript" src="plugins/jquery.min.js"></script>
-		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-
-		<!-- Modernizr javascript -->
-		<script type="text/javascript" src="plugins/modernizr.js"></script>
-
-		<!-- Isotope javascript -->
-		<script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
-
-		<!-- Backstretch javascript -->
-		<script type="text/javascript" src="plugins/jquery.backstretch.min.js"></script>
-
-		<!-- Appear javascript -->
-		<script type="text/javascript" src="plugins/jquery.appear.js"></script>
-
-		<!-- Initialization of Plugins -->
-		<script type="text/javascript" src="js/template.js"></script>
-
-		<!-- Custom Scripts -->
-		<script type="text/javascript" src="js/custom.js"></script>
-
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10451006; 
+var sc_invisible=1; 
+var sc_security="1deb6177"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
 	</body>
 </html>
