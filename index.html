@@ -30,8 +30,9 @@
 						</div>
 						<div class="content">
 							<div class="inner">
-								<h1>Colin Cooke</h1>
-								<p>Machine Learning Engineer and Researcher at Duke University</p>
+                                <h1>Colin Cooke</h1>
+                                <p style="text-transform: uppercase;">Machine Learning Engineer and Researcher at Duke University</p> 
+                                <p>Working at the intersection of optical design and image analysis</p> 
 							</div>
 						</div>
 						<nav>
@@ -42,7 +43,7 @@
 								<li><a href="#awards">Awards</a></li>
 								<li><a href="#contact">Contact</a></li>
 							</ul>
-						</nav>
+                        </nav>
 					</header>
 
 				<!-- Main -->
@@ -51,19 +52,29 @@
 						<!-- Research -->
 							<article id="research">
 								<h2 class="major">Research</h2>
-                                <span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-                                <h3 class="major">Learned Sensing</h3>
-                                <p>Microscopes represent one of the most flexible sensing instruments available. Working with Professor Roarke Horstmeyer I developed systems and strategies to use machine learning to optimize how microscopes sesnse their environment. We have explored this concept through modifications to the lens as well as to illumination.</p>
+                                <span class="image main"><img src="images/Picture1.png" alt="" /></span>
+                                <h3 class="link"><a href="https://arxiv.org/abs/2004.04306">Physics Enhanced Microscopy for Virtual Fluorescence</a></h3>
+                                <p>In this work we demonstrate the principle of "Learned Sensing" applied to fluorescence microscopy. We jointly optimized the illumination of a sample with a deep neural network to predict fluourescent images from unlabeled samples. Our results demonstrate that by adding a cheap LED array to a conventional transmission microscope you can greatly improve performance on virtual fluorescence tasks, and likely <i>In Silico</i> labelling tasks more broadly.</p>
+                                <b>Publication: <br/></b>
+                                Cooke, Colin L., et al. "Physics-enhanced machine learning for virtual fluorescence microscopy." <i>arXiv preprint</i>:arXiv:2004.04306 (2020).
+                                </p>
+                                <h3 class="link"><a href="https://arxiv.org/abs/1910.10209">Adaptive Microscope Illumination for Sample Classification</a></h3>
+                                <p>Here we demonstrate a new take on Learned Sensing by allowing the illumination of the sample to be governed <i>by the sample</i>. Looking at both simulated and experimental tasks we created a deep learning system that iteratively displayed different LED patterns on the sample, and integrated the coresponding images using an LSTM to make a classification.</p>
+                                <b>Publication: <br/></b>
+                                Chaware, Amey*, Cooke, Colin L.*, et al. "Towards an intelligent microscope: adaptively learned illumination for optimal sample classification." IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE, 2020.
+                                </p>
+
+
                                 <h3 class="major">Movement Signal Processing</h3>
                                 <p>Worked with Professor Arash Arami at the University of Waterloo to link concepts within reinforcement learning and neuromechanics. Developed new techniques for policy exploration which are inspired by the Muscle Synergy Hypothesis.</p>
-                                <h3 class="major">Staged Training to Predict Sea Ice Concentration</h3>	     
+                                <h3 class="link"><a href="https://ieeexplore.ieee.org/abstract/document/8636521/">Staged Training to Predict Sea Ice Concentration</a></h3>	     
                                 <p>Working with professor K. Andrea Scott at the University of Waterloo I developed deep learning training strategies to predict the sea ice concentration of Synaptive Aperature Radar images.
                                     We guided the training of CNNs by utilizing staged learning. We injected noise into the base image during training and gradually reduced it over several epochs.
                                     This led to the CNN learning feature based patterns prior to texture based and stopped the CNN from being stuck in a conceptual minima.
                                 </p>
                                 <p>
                                         <b>Publication: <br/></b>
-                                                                            C. LV. Cooke, and K.A. Scott, ”Estimating Sea Ice Concentration: Training Convolu-tional Neural Networks with Passive Microwave Data”, <i> Transactions on Geoscienceand Remote Sensing</i>, submitted: TGRS-2018-01183
+                                        Cooke, Colin LV, and K. Andrea Scott. "Estimating sea ice concentration from sar: Training convolutional neural networks with passive microwave data." <i>IEEE Transactions on Geoscience and Remote Sensing</i> 57.7 (2019): 4735-4747.
                                          </p>   
                                 <h3 class="major">Augmented Solar Analysis</h3>	
                                 <p>While working for Heliolytincs Inc. I integrated the results of Aerial Image Segmentation into analysis workflows. 
@@ -146,7 +157,8 @@ information and image content</li>
                             <article id="contact">
 								<h2 class="major">Contact</h2>
 								<p><b>Email: </b>  <a href="mailto:clvcooke@gmail.com">clvcooke@gmail.com</a><p>
-                                    <!-- <p><b>Phone: </b> 1-919-949-6809</p> -->
+                                <p><b>Scholar: </b>  <a href="https://scholar.google.ca/citations?user=rbmiR38AAAAJ&hl=en">Colin Cooke</a><p></p>
+                                <p><b>Twitter: </b>  <a href="https://twitter.com/clvcooke">@clvcooke</a><p></p>
 							</article>
 
 						<!-- Elements -->
@@ -154,6 +166,7 @@ information and image content</li>
 								<h2 class="major">Awards</h2>
 								<span class="image main"><img src="images/awards.jpg" alt="" /></span>
 								<ul>
+                                    <li>NSERC Doctoral Fellowship</li>
                                     <li>Norman Esch Entrepreneurship Award for Capstone Design</li>
 									<li>Social Awareness Award - Ontario Engineering Competition</li>
 									<li>Innovative Design, 1st Place - Ontario Engineering Competition</li>
